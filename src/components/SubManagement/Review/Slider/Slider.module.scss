@@ -18,6 +18,9 @@
     @media screen and (max-width: 1150px), screen and (max-height: 685px) {
       width: 200px;
     }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      width: 180px;
+    }
   }
   &_buttons {
     display: flex;
@@ -41,6 +44,13 @@
     color: #000000;
     user-select: none;
     cursor: default;
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      font-size: 0.8em;
+      line-height: 100%;
+    }
   }
   &_button {
     &_main {
@@ -59,6 +69,9 @@
         font-size: 0.8em;
         line-height: 100%;
       }
+      @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+        font-size: 0.7em;
+      }
     }
     &_small {
       font-style: normal;
@@ -75,6 +88,9 @@
       @media screen and (max-width: 1150px), screen and (max-height: 685px) {
         font-size: 0.7em;
         line-height: 100%;
+      }
+      @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+        font-size: 0.6em;
       }
     }
   }
@@ -98,6 +114,9 @@
     @media screen and (max-width: 1150px), screen and (max-height: 685px) {
       font-size: 0.7em;
       margin-top: 5px;
+    }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      font-size: 0.6em;
     }
   }
   &_btn {
@@ -144,6 +163,10 @@
       width: 180px;
       height: 230px;
     }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      width: 160px;
+      height: 200px;
+    }
     &_content {
       height: 100%;
       display: flex;
@@ -167,6 +190,13 @@
         height: 50px;
         & img {
           height: 50px;
+        }
+      }
+
+      @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+        height: 45px;
+        & img {
+          height: 45px;
         }
       }
     }
@@ -193,6 +223,9 @@
         @media screen and (max-width: 1150px), screen and (max-height: 685px) {
           font-size: 1.9em;
         }
+        @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+          font-size: 1.6em;
+        }
       }
       & span {
         font-style: normal;
@@ -209,6 +242,9 @@
         }
         @media screen and (max-width: 1150px), screen and (max-height: 685px) {
           font-size: 0.8em;
+        }
+        @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+          font-size: 0.7em;
         }
       }
     }
@@ -234,6 +270,9 @@
       @media screen and (max-width: 1150px), screen and (max-height: 685px) {
         font-size: 0.8em;
       }
+      @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+        font-size: 0.7em;
+      }
     }
     &_lastcharge {
       font-style: normal;
@@ -251,6 +290,10 @@
       @media screen and (max-width: 1150px), screen and (max-height: 685px) {
         line-height: 100%;
         font-size: 0.6em;
+      }
+      @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+        font-size: 0.5em;
+        margin: 0;
       }
     }
   }

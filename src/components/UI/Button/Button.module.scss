@@ -29,5 +29,9 @@
       width: 140px;
       height: 35px !important;
     }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      width: 125px;
+      height: 32px !important;
+    }
   }
 }

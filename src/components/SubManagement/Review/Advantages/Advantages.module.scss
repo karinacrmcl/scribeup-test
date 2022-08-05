@@ -11,6 +11,10 @@
     @media screen and (max-width: 1150px), screen and (max-height: 685px) {
       grid-gap: 10px;
     }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      grid-gap: 7px;
+      margin-top: -10px;
+    }
   }
   &_item {
     display: flex;
@@ -18,9 +22,6 @@
 
     grid-gap: 15px;
     @media screen and (max-width: 1520px), screen and (max-height: 820px) {
-      grid-gap: 10px;
-    }
-    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
       grid-gap: 10px;
     }
   }
@@ -56,6 +57,10 @@
     @media screen and (max-width: 1150px), screen and (max-height: 685px) {
       max-width: 100px;
       font-size: 0.6em;
+    }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      max-width: 90px;
+      font-size: 0.55em;
     }
   }
   &_accent {

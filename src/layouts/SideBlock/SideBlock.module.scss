@@ -26,13 +26,16 @@
       max-width: 200px;
       height: 255px;
     }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      max-width: 180px;
+      height: 225px;
+    }
   }
   &_title {
     font-style: normal;
     font-weight: 400;
     font-size: 0.85em;
     line-height: 15px;
-
     text-align: center;
 
     color: #7d7b7b;
@@ -48,6 +51,9 @@
     }
     @media screen and (max-width: 1150px), screen and (max-height: 685px) {
       font-size: 0.6em;
+    }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      font-size: 0.5em;
     }
   }
   &_content {

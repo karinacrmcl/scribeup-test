@@ -11,6 +11,10 @@
     width: 180px !important;
     height: 230px !important;
   }
+  @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+    width: 160px !important;
+    height: 210px !important;
+  }
 }
 
 .swiper-wrapper {
@@ -23,6 +27,9 @@
   @media screen and (max-width: 1150px), screen and (max-height: 685px) {
     width: 180px !important;
   }
+  @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+    width: 160px !important;
+  }
 }
 
 .swiper-slide {
@@ -32,5 +39,8 @@
   }
   @media screen and (max-width: 1150px), screen and (max-height: 685px) {
     width: 180px !important;
+  }
+  @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+    width: 160px !important;
   }
 }

@@ -5,6 +5,9 @@
     flex-direction: column;
 
     grid-gap: 20px;
+    @media screen and (max-width: 875px), screen and (max-height: 605px) {
+      height: 100%;
+    }
   }
   &_blocks {
     max-width: 100%;
@@ -25,6 +28,11 @@
     }
     @media screen and (max-width: 1150px), screen and (max-height: 685px) {
       height: 440px;
+      margin-top: 0px;
+      margin-bottom: -20px;
+    }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      height: 400px;
       margin-top: 0px;
       margin-bottom: -20px;
     }
@@ -107,6 +115,9 @@
       & span {
         font-size: 0.8em;
       }
+    }
+    @media screen and (max-width: 875px), screen and (max-height: 605px) {
+      margin-top: auto;
     }
   }
 }
