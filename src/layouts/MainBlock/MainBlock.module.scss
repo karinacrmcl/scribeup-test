@@ -30,5 +30,10 @@
       max-width: 290px;
       height: 355px;
     }
+    @media screen and (max-width: 875px), screen and (max-height: 605px) {
+      grid-area: 1 / 1 / 2 / 3;
+      order: -1;
+      max-width: 100%;
+    }
   }
 }

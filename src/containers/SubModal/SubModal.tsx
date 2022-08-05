@@ -1,4 +1,10 @@
-import React, { useState } from "react";
+import React, {
+  UIEvent,
+  UIEventHandler,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import Management from "../../components/SubManagement/Management/Management";
 import Review from "../../components/SubManagement/Review/Review";
 import { NavBar } from "./NavBar/NavBar";
@@ -24,10 +30,19 @@ export function SubModal({ defaultTab }: Props) {
   const handleTabChange = (tab: "review" | "management") => {
     setActiveTab(tab);
   };
+  const [offset, setOffset] = useState(0);
+
+  const handleScroll = (e: any) => {
+    setOffset(e.target.scrollHeight - e.target.scrollTop);
+  };
 
   return (
-    <div className={s.submodal_container}>
-      <NavBar activeTab={activeTab} onClick={handleTabChange} />
+    <div className={s.submodal_container} onScroll={handleScroll}>
+      <NavBar
+        activeTab={activeTab}
+        onClick={handleTabChange}
+        onScroll={offset}
+      />
       <div className={s.submodal_content}>
         <ActiveTab tab={activeTab} />
       </div>

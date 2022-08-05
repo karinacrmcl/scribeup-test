@@ -61,6 +61,23 @@ export default function UISvgSelector({ id }: Props) {
           </defs>
         </svg>
       );
+    case "down-arrow":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.5664 18.0268C12.7657 19.0355 11.2343 19.0355 10.4336 18.0268L5.0486 11.2435C4.00808 9.93279 4.94151 8 6.61503 8L17.385 8C19.0585 8 19.9919 9.9328 18.9514 11.2435L13.5664 18.0268Z"
+            fill="black"
+            stroke="black"
+            strokeWidth="2"
+          />
+        </svg>
+      );
 
     case "prev-arrow":
       return (

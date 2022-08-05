@@ -10,6 +10,13 @@
     }
     @media screen and (max-width: 875px), screen and (max-height: 605px) {
       height: 100%;
+      margin-top: -38px;
+    }
+    @media screen and (max-width: 470px) {
+      height: fit-content;
+    }
+    @media screen and (max-width: 398px) {
+      padding: 0 10px;
     }
   }
   &_content {
@@ -49,6 +56,9 @@
     }
     @media screen and (max-width: 1061px), screen and (max-height: 659px) {
       font-size: 1.2em;
+    }
+    @media screen and (max-width: 875px), screen and (max-height: 605px) {
+      display: none;
     }
   }
   &_button {
@@ -108,6 +118,14 @@
       & svg {
         width: 10px;
         height: 10px;
+      }
+    }
+    @media screen and (max-width: 875px), screen and (max-height: 605px) {
+      font-size: 0.7em;
+
+      & svg {
+        width: 15px;
+        height: 15px;
       }
     }
   }

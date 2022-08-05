@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "../../../../styles/lib/swiper.scss";
 import Button from "../../../UI/Button/Button";
+import { useMediaQuery } from "react-responsive";
 
 SwiperCore.use([Navigation]);
 
@@ -62,6 +63,8 @@ export default function Slider({ items }: Props) {
     return;
   };
 
+  const isSmallMobile = useMediaQuery({ query: "(max-width: 470px)" });
+
   return (
     <MainBlock>
       <div className={s.slider_container}>
@@ -107,16 +110,28 @@ export default function Slider({ items }: Props) {
 
         <div className={s.slider_buttons}>
           <Button onClick={handleReview} styles={{ background: "#F86262" }}>
-            <h3 className={s.slider_button_main}>I Want to Cancel This</h3>
-            <p className={s.slider_button_small}>to save money</p>
+            {isSmallMobile ? (
+              <h3 className={s.slider_button_main}>Cancel </h3>
+            ) : (
+              <>
+                <h3 className={s.slider_button_main}>I Want to Cancel This</h3>
+                <p className={s.slider_button_small}>to save money</p>
+              </>
+            )}
           </Button>
           <Button onClick={handleReview} styles={{ background: "#5DB075" }}>
-            <h3 className={s.slider_button_main}>I Want to Add This</h3>
-            <p className={s.slider_button_small}>to earn 5% Rewards</p>
+            {isSmallMobile ? (
+              <h3 className={s.slider_button_main}>Add </h3>
+            ) : (
+              <>
+                <h3 className={s.slider_button_main}>I Want to Add This</h3>
+                <p className={s.slider_button_small}>to earn 5% Rewards</p>
+              </>
+            )}
           </Button>
         </div>
 
-        <div className={s.slider_notsub}>This is Not a Subscription</div>
+        <div className={s.slider_notsub}>This is not a Subsription</div>
       </div>
     </MainBlock>
   );

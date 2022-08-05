@@ -7,6 +7,10 @@
     grid-gap: 20px;
     @media screen and (max-width: 875px), screen and (max-height: 605px) {
       height: 100%;
+      width: 100%;
+    }
+    @media screen and (max-width: 470px) {
+      height: fit-content;
     }
   }
   &_blocks {
@@ -35,6 +39,21 @@
       height: 400px;
       margin-top: 0px;
       margin-bottom: -20px;
+    }
+    @media screen and (max-width: 875px), screen and (max-height: 605px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 20px;
+      width: 440px;
+    }
+    @media screen and (max-width: 470px) {
+      display: flex;
+      flex-direction: column;
+
+      height: 100%;
+      padding-bottom: 30px;
     }
   }
   &_button {
@@ -77,6 +96,18 @@
       & svg {
         width: 12px;
         height: 12px;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      color: #5d5fef;
+      & svg {
+        width: 15px;
+        height: 15px;
+        margin-left: 2px;
+        margin-bottom: 1px;
+        & path {
+          fill: #5d5fef;
+        }
       }
     }
   }

@@ -156,6 +156,9 @@
         font-size: 0.5em;
         margin: 0;
       }
+      @media screen and (max-width: 470px) {
+        font-size: 0.6em;
+      }
     }
     &_asset {
       font-style: normal;
@@ -178,6 +181,9 @@
       }
       @media screen and (max-width: 1061px), screen and (max-height: 659px) {
         font-size: 0.4em;
+      }
+      @media screen and (max-width: 470px) {
+        font-size: 0.6em;
       }
     }
     &_value {
@@ -258,6 +264,9 @@
       @media screen and (max-width: 1061px), screen and (max-height: 659px) {
         font-size: 0.5em;
         line-height: 100%;
+      }
+      @media screen and (max-width: 470px) {
+        font-size: 0.6em;
       }
     }
     &_value {

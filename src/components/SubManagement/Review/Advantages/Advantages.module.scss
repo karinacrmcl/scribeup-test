@@ -33,6 +33,10 @@
         width: 25px;
         height: 25px;
       }
+      @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+        width: 22px;
+        height: 22px;
+      }
     }
   }
 
@@ -61,6 +65,10 @@
     @media screen and (max-width: 1061px), screen and (max-height: 659px) {
       max-width: 90px;
       font-size: 0.55em;
+    }
+    @media screen and (max-width: 470px) {
+      max-width: 120px;
+      font-size: 0.6em;
     }
   }
   &_accent {

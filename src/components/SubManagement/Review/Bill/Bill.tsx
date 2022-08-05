@@ -52,8 +52,7 @@ export function SubBill({ primarySubs, rewardsValue, cancelledSubs }: Props) {
 
         <div className={s.bill_items}>
           <BillItem
-            asset="How do ScribeUp Rewards work?"
-            description="5% off, up to $10/month"
+            asset="How does this work?"
             title={"ScribeUp Rewards"}
             amount={rewardsValue || 0}
           />

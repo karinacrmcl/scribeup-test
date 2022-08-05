@@ -72,6 +72,9 @@
       @media screen and (max-width: 1061px), screen and (max-height: 659px) {
         font-size: 0.7em;
       }
+      @media screen and (max-width: 470px) {
+        font-size: 0.9em;
+      }
     }
     &_small {
       font-style: normal;
@@ -294,6 +297,9 @@
       @media screen and (max-width: 1061px), screen and (max-height: 659px) {
         font-size: 0.5em;
         margin: 0;
+      }
+      @media screen and (max-width: 470px) {
+        font-size: 0.6em;
       }
     }
   }
