@@ -1,3 +1,5 @@
+# Demo: https://scribeup-test.herokuapp.com/
+
 # Setting up development environment
 
 ### git clone https://github.com/karinacrmcl/scribeup-test
