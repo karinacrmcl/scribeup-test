@@ -1,0 +1,28 @@
+.advantages{
+    &_container{
+        display: flex;
+        flex-direction: column;
+
+        grid-gap: 25px;
+    }
+    &_item {
+        display: flex;
+        align-items: center;
+
+        grid-gap: 15px;
+
+    }
+    &_icon{
+        width: 30px;
+        height: 30px;
+    }
+
+    &_text{
+        font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #000000;
+    }
+}
