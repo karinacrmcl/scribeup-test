@@ -4,7 +4,9 @@ import { SubModal } from "./containers/SubModal/SubModal";
 function App() {
   return (
     <div className="App">
-      <SubModal defaultTab="review" />
+      <div className="screen">
+        <SubModal defaultTab="review" />
+      </div>
     </div>
   );
 }

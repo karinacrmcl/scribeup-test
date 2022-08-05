@@ -12,12 +12,24 @@
     width: 250px;
     padding: 10px;
     overflow-x: hidden;
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      width: 230px;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      width: 200px;
+    }
   }
   &_buttons {
     display: flex;
     grid-gap: 10px;
 
     margin-top: 10px;
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      margin-top: 5px;
+    }
   }
   &_title {
     font-style: normal;
@@ -40,6 +52,13 @@
       color: #ffffff;
       margin: 0;
       padding: 0;
+      @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+        font-size: 0.9em;
+      }
+      @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+        font-size: 0.8em;
+        line-height: 100%;
+      }
     }
     &_small {
       font-style: normal;
@@ -50,6 +69,13 @@
       color: #ffffff;
       margin: 0;
       padding: 0;
+      @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+        font-size: 0.8em;
+      }
+      @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+        font-size: 0.7em;
+        line-height: 100%;
+      }
     }
   }
   &_notsub {
@@ -64,6 +90,14 @@
     &:hover {
       cursor: pointer;
       color: #484bdd;
+    }
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      font-size: 0.8em;
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      font-size: 0.7em;
+      margin-top: 5px;
     }
   }
   &_btn {
@@ -81,6 +115,12 @@
     &:disabled {
       opacity: 0.8;
     }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      & svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
   }
   &_card {
     width: 230px;
@@ -96,6 +136,14 @@
 
     cursor: default;
     user-select: none;
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      width: 210px;
+      height: 260px;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      width: 180px;
+      height: 230px;
+    }
     &_content {
       height: 100%;
       display: flex;
@@ -109,6 +157,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+        height: 60px;
+        & img {
+          height: 55px;
+        }
+      }
+      @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+        height: 50px;
+        & img {
+          height: 50px;
+        }
+      }
     }
     &_value {
       display: flex;
@@ -117,6 +177,7 @@
       justify-content: center;
 
       margin-top: 20px;
+
       & h4 {
         font-style: normal;
         font-weight: 700;
@@ -126,6 +187,12 @@
         color: #000000;
         margin: 0;
         padding: 0;
+        @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+          font-size: 2.1em;
+        }
+        @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+          font-size: 1.9em;
+        }
       }
       & span {
         font-style: normal;
@@ -137,6 +204,12 @@
         color: #7d7b7b;
         margin: 0;
         padding: 0;
+        @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+          font-size: 0.9em;
+        }
+        @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+          font-size: 0.8em;
+        }
       }
     }
     &_info {
@@ -155,6 +228,12 @@
       color: #7d7b7b;
       margin: 0 0;
       padding: 0;
+      @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+        font-size: 0.9em;
+      }
+      @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+        font-size: 0.8em;
+      }
     }
     &_lastcharge {
       font-style: normal;
@@ -166,6 +245,13 @@
       color: #7d7b7b;
       margin: 5px 0 0 0;
       padding: 0;
+      @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+        font-size: 0.7em;
+      }
+      @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+        line-height: 100%;
+        font-size: 0.6em;
+      }
     }
   }
   &_expand {
@@ -186,6 +272,12 @@
         & path {
           fill: #636060;
         }
+      }
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      & svg {
+        width: 20px;
+        height: 20px;
       }
     }
   }

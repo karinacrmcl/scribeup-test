@@ -16,6 +16,18 @@
     justify-content: space-between;
 
     padding: 0 25px;
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      height: 480px;
+    }
+    @media screen and (max-width: 1300px), screen and (max-height: 745px) {
+      height: 450px;
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      height: 440px;
+      margin-top: 0px;
+      margin-bottom: -20px;
+    }
   }
   &_button {
     font-style: normal;
@@ -44,6 +56,21 @@
         }
       }
     }
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      font-size: 1em;
+      & svg {
+        width: 14px;
+        height: 14px;
+        margin-bottom: 0px;
+      }
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      font-size: 0.8em;
+      & svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
   }
   &_footer {
     font-style: normal;
@@ -67,6 +94,18 @@
       &:hover {
         cursor: pointer;
         color: #484bdd;
+      }
+    }
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      font-size: 0.8em;
+      & span {
+        font-size: 0.9em;
+      }
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      font-size: 0.7em;
+      & span {
+        font-size: 0.8em;
       }
     }
   }

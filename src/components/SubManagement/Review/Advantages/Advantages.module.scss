@@ -5,17 +5,33 @@
     align-items: center;
 
     grid-gap: 25px;
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      grid-gap: 15px;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      grid-gap: 10px;
+    }
   }
   &_item {
     display: flex;
     align-items: center;
 
     grid-gap: 15px;
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      grid-gap: 10px;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      grid-gap: 10px;
+    }
   }
   &_icon {
     & img {
       width: 30px;
       height: 30px;
+      @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 
@@ -33,6 +49,14 @@
     padding: 0;
 
     cursor: default;
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      max-width: 110px;
+      font-size: 0.7em;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      max-width: 100px;
+      font-size: 0.6em;
+    }
   }
   &_accent {
     font-weight: 700;

@@ -35,5 +35,18 @@
 
       transition: all 0.2s;
     }
+
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 1300px), screen and (max-height: 745px) {
+      font-size: 0.8em;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      font-size: 0.7em;
+    }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      font-size: 0.65em;
+    }
   }
 }

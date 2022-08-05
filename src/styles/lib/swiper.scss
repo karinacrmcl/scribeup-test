@@ -3,14 +3,34 @@
   display: flex !important;
   justify-content: center;
   height: 280px;
+  @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+    width: 210px !important;
+    height: 260px !important;
+  }
+  @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+    width: 180px !important;
+    height: 230px !important;
+  }
 }
 
 .swiper-wrapper {
   width: 230px !important;
   display: flex !important;
   justify-content: space-between;
+  @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+    width: 210px !important;
+  }
+  @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+    width: 180px !important;
+  }
 }
 
 .swiper-slide {
   width: 230px !important;
+  @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+    width: 210px !important;
+  }
+  @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+    width: 180px !important;
+  }
 }

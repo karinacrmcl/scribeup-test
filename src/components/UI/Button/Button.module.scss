@@ -17,5 +17,17 @@
       cursor: pointer;
       -webkit-filter: brightness(95%);
     }
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      width: 170px;
+      height: 45px;
+    }
+    @media screen and (max-width: 1300px), screen and (max-height: 745px) {
+      width: 160px;
+      height: 40px !important;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      width: 140px;
+      height: 35px !important;
+    }
   }
 }

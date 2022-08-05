@@ -18,6 +18,21 @@
 
     user-select: none;
     cursor: default;
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      font-size: 1.6em;
+      margin: 10px 0 0 0;
+    }
+    @media screen and (max-width: 1300px), screen and (max-height: 745px) {
+      font-size: 1.5em;
+      line-height: 100%;
+      margin: 5px 0 0 0;
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      font-size: 1.3em;
+    }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      font-size: 1.2em;
+    }
   }
   &_button {
     width: fit-content;
@@ -50,6 +65,32 @@
       cursor: pointer;
       & svg {
         margin-left: -5px;
+      }
+    }
+    @media screen and (max-width: 1520px), screen and (max-height: 820px) {
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 1300px), screen and (max-height: 745px) {
+      font-size: 0.8em;
+      line-height: 100%;
+      & svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+    @media screen and (max-width: 1150px), screen and (max-height: 685px) {
+      font-size: 0.7em;
+      line-height: 100%;
+      & svg {
+        width: 11px;
+        height: 11px;
+      }
+    }
+    @media screen and (max-width: 1061px), screen and (max-height: 659px) {
+      font-size: 0.6em;
+      & svg {
+        width: 10px;
+        height: 10px;
       }
     }
   }
