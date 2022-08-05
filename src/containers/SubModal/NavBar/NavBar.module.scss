@@ -1,0 +1,39 @@
+.navbar {
+  &_container {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    grid-gap: 2px;
+  }
+  &_tab {
+    width: 50%;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 17px;
+
+    color: #9a9a9a;
+    background: #f0f0f0;
+
+    transition: all 0.2s;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background: #ebebeb;
+    }
+    &_active {
+      color: #5d5fef;
+      background: #ebebeb;
+
+      transition: all 0.2s;
+    }
+  }
+}
