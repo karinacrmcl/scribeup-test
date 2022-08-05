@@ -9,6 +9,7 @@ import SwiperCore, { Navigation } from "swiper";
 import "../../../../styles/lib/swiper.scss";
 import Button from "../../../UI/Button/Button";
 import { useMediaQuery } from "react-responsive";
+import classNames from "classnames";
 
 SwiperCore.use([Navigation]);
 
@@ -64,7 +65,6 @@ export default function Slider({ items }: Props) {
   };
 
   const isSmallMobile = useMediaQuery({ query: "(max-width: 470px)" });
-
   return (
     <MainBlock>
       <div className={s.slider_container}>
@@ -72,7 +72,7 @@ export default function Slider({ items }: Props) {
 
         <div className={s.slider_slider}>
           <button
-            className={s.slider_btn}
+            className={classNames(s.slider_btn, "swiper-button-prev")}
             ref={prevBtn}
             // @ts-ignore
             onClick={() => swiperRef.current.swiper.slidePrev()}
@@ -85,6 +85,7 @@ export default function Slider({ items }: Props) {
               ref={swiperRef}
               slidesPerView={1}
               spaceBetween={20}
+              loop={true}
               navigation={{
                 prevEl: prevBtn.current,
                 nextEl: nextBtn.current,
